@@ -86,7 +86,7 @@ pip install -r requirements.txt
 ```
 
 ## Quick Start
-1. Utilize the C++ multi-frame registration program to generate wide-FOV frames, narrow-FOV frames, and corresponding homography matrices.
+1. In our N2W annotation, we propose a multi-frame algorithm, which improves registration ability by using multiple narrow FOV frames instead of a single one. It significantly alleviates the jitter which exists in the single frame registration. Utilize the C++ multi-frame registration algorithm to generate corresponding homography matrices.
 2. The N2W Annotation(python) we propose a reverse bounding box mapping, which uses a KCF tracker to effectively correct deviations of projecting bounding boxes on the narrow FOV images to the wide FOV images.
 3. We also peovide some sample data in the '**asset**' folder
 
