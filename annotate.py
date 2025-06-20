@@ -62,7 +62,7 @@ def getObjectsFromXml(xml_path):
     return names, xyxys
 
 
-## Check if xyxy is inside the polygon
+## Check whether xyxy is in the poygon or not
 def isXyxyInPolygon(contour, xyxy):
     point0 = (int(xyxy[0]), int(xyxy[1])) #tl
     point1 = (int(xyxy[2]), int(xyxy[1])) #tr
@@ -70,7 +70,7 @@ def isXyxyInPolygon(contour, xyxy):
     point3 = (int(xyxy[0]), int(xyxy[3])) #bt
     polygon1 = _sort_vertices_anti_clockwise_and_remove_duplicates([point0, point1, point2, point3])
     polygon2 = _sort_vertices_anti_clockwise_and_remove_duplicates(contour[0])
-    polygon3 = intersect(polygon1, polygon2)#交集
+    polygon3 = intersect(polygon1, polygon2)
     if len(polygon3):
         polygon3 = np.array(polygon3,dtype=np.float32)
         area_intersect = cv2.contourArea(polygon3)
@@ -80,7 +80,6 @@ def isXyxyInPolygon(contour, xyxy):
             return True
     return False
 
-# Remove rectangles inside the polygon
 def getObjectsIsNotInPolyon(names, xyxys, contour):
     names_new = []
     xyxys_new = []
@@ -108,9 +107,7 @@ def xyxys_warp(M, xyxys):
         xyxys_new.append([xmin, ymin, xmax, ymax])
     return xyxys_new
 
-#
-# Beautify XML file
-#
+
 def prettyXml(element, indent, newline, level = 0): # element is the incoming Element class, indent for indentation, newline for line breaks
     if element:  # Check if element has child elements
         if element.text == None or element.text.isspace(): # If element's text has no content
