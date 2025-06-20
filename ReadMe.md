@@ -87,7 +87,7 @@ pip install -r requirements.txt
 
 ## Quick Start
 1. Utilize the C++ multi-frame registration program to generate wide-FOV frames, narrow-FOV frames, and corresponding homography matrices. Then apply object detection algorithms to generate annotation files, forming the dataset list for pythonForAnnotation.
-2. We also have some sample data in the '**asset**' folder
+2. We also peovide some sample data in the '**asset**' folder
 
 ```bash
 python annotate.py --N2W_dataset_root your_dataset_root_dir --dataset_output dataset_output_dir --outputName prefix_ --isSaveData True --viewResult True
