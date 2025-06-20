@@ -45,23 +45,23 @@ Our N2W provides C++ sample code for multi-frame matching, demonstrating the gen
     │  └─res_match
     ......
 ## Requirements
-***pythonForAnnotation***
+***N2W Annotation (python)***
 
    Python >= 3.9
 
 **Dependencies:** 
 
-    - numpy==1.24.3
-    opencv-contrib-python==4.10.0.84
-    opencv-python==4.9.0.80
-    pandas==2.2.1
-    pillow==10.3.0
-    tqdm==4.66.4
-    matplotlib==3.8.4
+    -- numpy==1.24.3
+    -- opencv-contrib-python==4.10.0.84
+    -- opencv-python==4.9.0.80
+    -- pandas==2.2.1
+    -- pillow==10.3.0
+    -- tqdm==4.66.4
+    -- matplotlib==3.8.4
   
- ***C++ multi-frame match***
+ ***N2W multiFrame Register (C++)***
  
- MSVC=v143
+ MSVC==v143
  
  cuda==11.8
  
@@ -69,9 +69,9 @@ Our N2W provides C++ sample code for multi-frame matching, demonstrating the gen
  
  **Dependencies:**
  
-    -opencv==3.4.12
-    onnxruntime_gpu==1.16.3
-    json-nlohmann
+    -- opencv==3.4.12
+    -- onnxruntime_gpu==1.16.3
+    -- json-nlohmann
 
 ## Installation
 
