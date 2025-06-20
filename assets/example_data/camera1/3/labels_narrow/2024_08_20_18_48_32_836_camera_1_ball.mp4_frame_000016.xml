@@ -1,0 +1,26 @@
+<annotation>
+    <folder>images</folder>
+    <filename>2024_08_20_18_48_32_836_camera_1_ball.mp4_frame_000016.jpg</filename>
+    <path>2024_08_20_18_48_32_836_camera_1_ball.mp4_frame_000016.jpg</path>
+    <source>
+        <database>Unknown</database>
+    </source>
+    <size>
+        <width>1920</width>
+        <height>1080</height>
+        <depth>3</depth>
+    </size>
+    <segmented>0</segmented>
+    <object>
+        <name>person</name>
+        <pose>Unspecified</pose>
+        <truncated>0</truncated>
+        <difficult>0</difficult>
+        <bndbox>
+            <xmin>161</xmin>
+            <ymin>496</ymin>
+            <xmax>191</xmax>
+            <ymax>566</ymax>
+        </bndbox>
+    </object>
+</annotation>
